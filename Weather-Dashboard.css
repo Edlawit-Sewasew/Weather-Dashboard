@@ -1,0 +1,108 @@
+html, body{
+    height: 100%;
+    margin: 0;
+}
+body{
+    font-family: 'Segoe UI', sans-serif;
+    color: rgb(51, 51, 51); 
+    background: linear-gradient(rgb(56,34,133) 0%, rgb(43,50,122) 0%, rgb(0,2,4) 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    display: flex;
+    max-width: 900px; 
+    margin: 20px; 
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(rgb(22, 19, 56), rgb(0,2,4)); 
+    border-radius: 10px;
+    overflow: hidden;
+}
+.weatherCard{
+    flex: 1 1 300px;
+    color: white; 
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 360px;
+
+}
+.weatherCard h2{
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.weatherDetails{
+    flex: 1 1 300px;
+    padding: 30px;
+    background: white;
+}
+.searchBar{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}  
+#locationInput{
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 10px;
+}
+#locationInput:focus {
+    outline: 2px solid rgb(77, 144, 254);
+    border-color: rgb(77, 144, 254);
+}
+#searchButton{
+    padding: 10px 20px;
+    background: rgb(24, 8, 80); 
+    color: white; 
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+} 
+#searchButton:hover{
+    background: rgb(36, 15, 120);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+.forecast h3{
+    margin-top: 20px;
+    font-size: 18px;
+}
+#forecast-list{
+    list-style: none;
+    padding: 0;
+}  
+#forecast-list li{
+    margin: 6px 0;
+    font-size: 16px;
+}
+.weather-label{
+    font-weight: 700;
+    color: white;
+    font-size: 14px;
+}
+.weather-value{
+    color: rgb(220, 220, 220);
+    margin-left: 8px;
+    font-size: 15px;
+}
+.forecast-item{
+    margin: 12px 0;
+    padding: 12px;
+    background: rgba(30, 25, 80, 0.7);
+    border-radius: 8px;
+    border-left: 4px solid rgb(86, 98, 246);
+}
+.weather-info-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.weather-image{
+    text-align: center;
+    margin: 15px 0;
+}
